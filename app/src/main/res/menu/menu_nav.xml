@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_upload_document"
+        android:title="Upload Document" />
+
+    <item
+        android:id="@+id/menu_cheque_receipt"
+        android:title="Cheque Receipt" />
+    <item
+        android:id="@+id/menu_form_summary"
+        android:title="Form Summary" />
+    <item
+        android:id="@+id/menu_sales_order"
+        android:title="Sales Order" />
+
+</menu>

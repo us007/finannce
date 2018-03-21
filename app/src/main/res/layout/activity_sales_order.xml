@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_order"
+    tools:context="com.prudent.busoftadmin.ui.salesorder.SalesOrderActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/_5sdp"
+            android:paddingStart="@dimen/_5sdp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="@dimen/_2sdp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="@dimen/_10sdp">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnCount="2">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Area"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <com.prudent.busoftadmin.utils.searchablespinner.SearchableSpinner
+                        android:id="@+id/spn_sales_order_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Party Name"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <com.prudent.busoftadmin.utils.searchablespinner.SearchableSpinner
+                        android:id="@+id/spn_sales_order_party_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Broker"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <com.prudent.busoftadmin.utils.searchablespinner.SearchableSpinner
+                        android:id="@+id/spn_sales_order_broker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Number "
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/et_sales_order_number"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:inputType="numberDecimal"
+                        android:lines="1"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black" />
+                </GridLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="@dimen/_2sdp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:columnCount="2">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Item Name"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <com.prudent.busoftadmin.utils.searchablespinner.SearchableSpinner
+                            android:id="@+id/spn_sales_order_item_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_30sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textColor="@android:color/black" />
+                    </GridLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:weightSum="4">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="Rate/Charge "
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/appCompatTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="20dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Tax Rate "
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/appCompatTextView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:text="Net Rate "
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:weightSum="4">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/et_sales_order_rate_charge"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="start"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_rectangle"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberDecimal"
+                            android:lines="1"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textColor="@android:color/black" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/et_sales_order_tax_rate"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_rectangle"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberDecimal"
+                            android:lines="1"
+
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textColor="@android:color/black" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/et_sales_order_net_rate"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_rectangle"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberDecimal"
+                            android:lines="1"
+
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textColor="@android:color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="@dimen/_2sdp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="@dimen/_10sdp">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnCount="2">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity "
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/et_sales_order_quantity"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Amount "
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/et_sales_order_amount"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_sales_order_add"
+                        style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:text="Add"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_sales_order_show"
+                        style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:text="Show"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+                </GridLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="@dimen/_2sdp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="3">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_sales_order_save"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="1"
+                        android:background="?attr/colorPrimary"
+                        android:text="Save"
+                        android:textColor="@color/white" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_sales_order_reset"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:background="?attr/colorPrimary"
+                        android:text="Reset"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
