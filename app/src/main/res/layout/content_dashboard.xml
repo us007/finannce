@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.prudent.busoftadmin.ui.Dashboard.DashboardActivity"
+    tools:context="com.data.busoftadmin.ui.Dashboard.DashboardActivity"
     tools:showIn="@layout/activity_dashboard">
 
     <LinearLayout
@@ -36,7 +36,7 @@
             android:orientation="vertical"
             android:visibility="gone">
 
-            <com.prudent.busoftadmin.utils.RecyclerGallery
+            <com.data.busoftadmin.utils.RecyclerGallery
                 android:id="@+id/recyclerview_dashboard_reports"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

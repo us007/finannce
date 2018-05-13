@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/ll_order"
-    tools:context="com.prudent.busoftadmin.ui.salesorder.SalesOrderActivity">
+    tools:context="com.data.busoftadmin.ui.salesorder.SalesOrderActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -55,7 +55,7 @@
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
-                    <com.prudent.busoftadmin.utils.searchablespinner.SearchableSpinner
+                    <com.data.busoftadmin.utils.searchablespinner.SearchableSpinner
                         android:id="@+id/spn_sales_order_area"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
-                    <com.prudent.busoftadmin.utils.searchablespinner.SearchableSpinner
+                    <com.data.busoftadmin.utils.searchablespinner.SearchableSpinner
                         android:id="@+id/spn_sales_order_party_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -91,7 +91,7 @@
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
-                    <com.prudent.busoftadmin.utils.searchablespinner.SearchableSpinner
+                    <com.data.busoftadmin.utils.searchablespinner.SearchableSpinner
                         android:id="@+id/spn_sales_order_broker"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -149,7 +149,7 @@
                             android:textColor="@android:color/black"
                             android:textStyle="bold" />
 
-                        <com.prudent.busoftadmin.utils.searchablespinner.SearchableSpinner
+                        <com.data.busoftadmin.utils.searchablespinner.SearchableSpinner
                             android:id="@+id/spn_sales_order_item_name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

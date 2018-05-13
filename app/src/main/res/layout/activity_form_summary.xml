@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.prudent.busoftadmin.ui.formsummary.FormSummaryActivity">
+    tools:context="com.data.busoftadmin.ui.formsummary.FormSummaryActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/bar_layout_cheque_receipt"
@@ -56,7 +56,7 @@
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
-                    <com.prudent.busoftadmin.utils.searchablespinner.SearchableSpinner
+                    <com.data.busoftadmin.utils.searchablespinner.SearchableSpinner
                         android:id="@+id/spn_account_voucher"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -166,7 +166,7 @@
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
-                    <com.prudent.busoftadmin.utils.searchablespinner.SearchableSpinner
+                    <com.data.busoftadmin.utils.searchablespinner.SearchableSpinner
                         android:id="@+id/spn_dr_account"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -183,7 +183,7 @@
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
-                    <com.prudent.busoftadmin.utils.searchablespinner.SearchableSpinner
+                    <com.data.busoftadmin.utils.searchablespinner.SearchableSpinner
                         android:id="@+id/spn_cr_account"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -201,7 +201,7 @@
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
-                    <com.prudent.busoftadmin.utils.searchablespinner.SearchableSpinner
+                    <com.data.busoftadmin.utils.searchablespinner.SearchableSpinner
                         android:id="@+id/spn_account_type"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

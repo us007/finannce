@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:id="@+id/alarm_time"
-        android:text="utsav shahhh"
+        android:text=""
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/alarm_note"
         android:layout_toRightOf="@id/alarm_note"

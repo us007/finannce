@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/colorPrimary"
-    tools:context="com.prudent.busoftadmin.alarmui.AlertActivity">
+    tools:context="com.data.busoftadmin.alarmui.AlertActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"

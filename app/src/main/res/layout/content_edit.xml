@@ -12,7 +12,7 @@
         android:id="@+id/date_text"
         android:textSize="18sp"
         android:textColor="#000"
-        android:text="utsav shah"
+        android:text=""
         android:layout_marginTop="8dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"/>
@@ -24,7 +24,7 @@
         android:id="@+id/time_text"
         android:textSize="18sp"
         android:textColor="#000"
-        android:text="shah   "
+        android:text=""
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="8dp"

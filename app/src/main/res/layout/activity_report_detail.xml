@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.prudent.busoftadmin.ui.ReportDetail.ReportDetailActivity">
+    tools:context="com.data.busoftadmin.ui.ReportDetail.ReportDetailActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

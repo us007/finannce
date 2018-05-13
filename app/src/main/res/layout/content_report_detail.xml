@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.prudent.busoftadmin.ui.ReportDetail.ReportDetailActivity"
+    tools:context="com.data.busoftadmin.ui.ReportDetail.ReportDetailActivity"
     tools:showIn="@layout/activity_report_detail">
 
-    <com.prudent.busoftadmin.utils.SortableReportDetailTableView
+    <com.data.busoftadmin.utils.SortableReportDetailTableView
         android:id="@+id/tableView_report_detail"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
